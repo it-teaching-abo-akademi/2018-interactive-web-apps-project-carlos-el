@@ -352,7 +352,7 @@ class Portfolio extends React.Component {
         if(this.state.stocks != null) {
             return(
                 //For each portfolio stock create a line (Stock component) for rendering.
-                this.state.stocks.map((stock) => {
+                this.state.stocks.map(stock => {
                     //Depending on the current currency of the portfolio render one value or other.
                     if(this.state.usingEUR){
                         return(

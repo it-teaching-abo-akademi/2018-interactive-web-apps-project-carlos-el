@@ -1,0 +1,113 @@
+/*Style for Phones */
+* {
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0px;
+}
+
+button{
+    padding: 0px;
+    margin: 5px 0px 5px 0px;
+}
+
+/*For phones we use only one colum per row */
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
+
+/*Container fo the whole page with max width*/
+.spms-container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: lightgrey;
+}
+
+.portfolio{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/*Sets back of the modal window to the whole and give it a grey transparency*/
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/*Sets the modal window in front of everything and in the middle*/
+.modal{
+    border: 1px solid black;
+    position:fixed;
+    background: white;
+    width: 90%;
+    padding: 20px;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.portfolio-container{
+    padding: 15px 0px 0px 0px;
+}
+
+.portfolio-row{
+    background-color: beige;
+}
+
+.close {
+    float: right;
+}
+
+.close:hover {background: #bbb;}
+
+.stock-container{
+    border: 1px solid black;
+    height: 100px; /*increase this for aesthetics*/
+    width: 100%;
+    overflow: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/*Style for desktop*/
+@media only screen and (min-width: 1000px) {
+    /* Divide the each row in 12 columns of the same width */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    p{
+        margin: 1em 0px;
+    }
+
+    .portfolio-container{
+        padding: 20px;
+    }
+
+    .add-portfolio-button{
+        padding: 20px 0px 0px 20px;
+    }
+
+    .modal{
+        width: 50%;
+    }
+}
